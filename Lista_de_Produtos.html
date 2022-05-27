@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Lista_de_Produtos.css">
+    <title>Produtos</title>
+</head>
+<body>
+    <div class="formstyle">
+
+         <h1>Produtos Receitados</h1>
+
+        <form id="produtosform">
+            <label for="produto">Produto: </label>
+            <input type="text" name="product" id="produto" placeholder="Digite o nome do Produto">
+
+            <label for="produto">Valor: </label>
+            <input type="number" name="price" id="price" placeholder="Digite o Preço">
+
+            <input type="checkbox" name="rate" id="rate">
+            <label for="produto">Taxa</label>
+
+            <input type="hidden" name="idx" id="idx" value="new">
+            <input type="submit" name="save"  value="registrar" id="save">
+        </form>
+    </div>
+
+    <table border="1">
+        <caption><h3>Produtos/Receitas</h3></caption>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>PRODUTO</th>
+                    <th>VALOR</th>
+                    <th>TAXA</th>
+                    <th>Opções</th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+    </table>
+    <script src="js/Lista_de_Produtos.js"></script>
+</body>
+</html>
